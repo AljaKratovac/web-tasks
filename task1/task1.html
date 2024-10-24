@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale= 1.0">
+    <title> MY CV </title>
+</head>
+<body>
+    <header>
+   <h1>
+    Alja Kratovac
+   </h1> 
+  </header>
+   
+    <img src="https://science4fun.info/wp-content/uploads/2017/05/tree.jpg" alt="My picture" style="width:300px;height:200px;">
+
+
+   <nav>
+    <p>
+        <ul>
+    <a href="/html/"><li>About me</li></a> 
+    </ul>
+    </p>
+    <p>
+    <ul>
+    <a href="/css/"><li>Experience</li></a> 
+    </ul>
+    </p>
+
+    <p>
+        <ul>
+
+    <a href="/js/"><li>Skills</li></a> 
+   </ul>
+   </p>
+    
+</nav>
+<hr> 
+<article>
+<h2>Introduction</h2>
+<p>
+    Hello my name is Alja and this is my CV. 
+</p>
+</article>
+<hr> 
+<article>
+    <h2>My location</h2>
+    <p>
+    <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">Try It</button>
+
+    <p id="demo"></p>
+
+    <script>
+    const x = document.getElementById("demo");
+
+    function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+    }
+
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+
+    </p>
+</article>
+<hr> 
+<article>
+    <h2>My Experience</h2>
+    <p> 
+    My dream is to work in your it firm. Pleas let me in. 
+    </p>
+</article>
+<hr>
+<footer>
+    <p>e.g., "© 2024 Alja Kratovac"</p>
+    <p><a href="alja.kratovac">mymail</a></p>
+</footer>
+
+
+
+</body>
